@@ -35,7 +35,15 @@
 
 
         .fade-in-stationary {
-            animation: fadeInStationary 1s ease-in-out;
+          animation: fadeInStationary 1s ease-in-out;
+        }
+
+        .card-hover:hover {
+          box-shadow: 0 16px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-hover {
+          transition: box-shadow 0.3s ease-in-out;
         }
 
       </style>
@@ -79,7 +87,7 @@
     <div class="container mt-5">
         <div class="row">
           <div class="col-sm">
-            <div class="card fade-in-stationary" style="width: 18rem;">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -88,7 +96,7 @@
             </div>
           </div>
           <div class="col-sm">
-            <div class="card fade-in-stationary" style="width: 18rem;">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -97,7 +105,7 @@
             </div>
           </div>
           <div class="col-sm">
-            <div class="card fade-in-stationary" style="width: 18rem;">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
