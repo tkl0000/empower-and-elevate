@@ -23,45 +23,93 @@
         .fade-in {
           animation: fadeIn 1s ease-in-out;
         }
+
+        .sponsorship {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .sponsorship:hover {
+            transform: translateY(-20px);
+        }
+
       </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="logo.png" width="30px"></a>
+            <a class="navbar-brand" href="#"><img src="assets/logo_new_black.png" width="30px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav text-lg-start">
                 <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="info.html">More Info</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="mentors.html">Mentors</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="team.html">Our Team</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
             </div>
         </div>
     </nav>
+    
     <div class="container mt-5 text-left">
-        <h1 class="fade-in">Who are We?</h1>
-        <p class="lead fade-in">This is some text that loads in with a fade-in animation.</p>
+        <h1 class="fade-in">Our Team</h1>
+            <p class="lead fade-in">We are a dedicated team of high schoolers from the Bay Area, Maryland, and New Jersey. As beneficiaries of the privileges of having parents who work in high tech, it would mean a great deal for us as students to reach out to others who are less equipped to compete in the high-tech world.
+        </p>
+
     </div>
-    <div class="container mt-5 text-left">
-        <h1 class="fade-in">Our Mission</h1>
-        <p class="lead fade-in">This is some text that loads in with a fade-in animation.</p>
-    </div>
-    <div class="container mt-5 text-left">
-        <h1 class="fade-in">Partners and Sponsors</h1>
-        <p class="lead fade-in">This is some text that loads in with a fade-in animation.</p>
-    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer>
+        <div class="container-fluid">
+            <footer class="bg-white text-black opacity-50 text-center p-3">
+              <p>&copy; Empower&Elevate</p>
+            </footer>
+          </div>
+    </footer>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
