@@ -19,17 +19,23 @@
                 transform: translateY(0);
             }
         }
+
+        @keyframes fadeInStationary {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     
         .fade-in {
           animation: fadeIn 1s ease-in-out;
         }
 
-        .sponsorship {
-            transition: transform 0.3s ease-in-out;
-        }
 
-        .sponsorship:hover {
-            transform: translateY(-20px);
+        .fade-in-stationary {
+            animation: fadeInStationary 1s ease-in-out;
         }
 
       </style>
@@ -37,7 +43,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="assets/logo_new_black.png" width="30px"></a>
+            <a class="navbar-brand" href="#"><img src="assets/logo_new.png" width="80px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -70,10 +76,10 @@
 
     </div>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
           <div class="col-sm">
-            <div class="card" style="width: 18rem;">
+            <div class="card fade-in-stationary" style="width: 18rem;">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -82,7 +88,7 @@
             </div>
           </div>
           <div class="col-sm">
-            <div class="card" style="width: 18rem;">
+            <div class="card fade-in-stationary" style="width: 18rem;">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -91,7 +97,7 @@
             </div>
           </div>
           <div class="col-sm">
-            <div class="card" style="width: 18rem;">
+            <div class="card fade-in-stationary" style="width: 18rem;">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
