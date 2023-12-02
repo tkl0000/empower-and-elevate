@@ -19,10 +19,38 @@
                 transform: translateY(0);
             }
         }
+
+        @keyframes fadeInStationary {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     
         .fade-in {
           animation: fadeIn 1s ease-in-out;
         }
+
+
+        .fade-in-stationary {
+          animation: fadeInStationary 1s ease-in-out;
+        }
+
+        .card-hover:hover {
+          box-shadow: 0 16px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-hover {
+          transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .centered-columns {
+            display: flex;
+            justify-content: center;
+        }
+
       </style>
 </head>
 <body>
@@ -53,18 +81,127 @@
             </div>
         </div>
     </nav>
+    
     <div class="container mt-5 text-left">
-        <h1 class="fade-in">Who are We?</h1>
-        <p class="lead fade-in">This is some text that loads in with a fade-in animation.</p>
+        <h1 class="fade-in">Our Team</h1>
+            <p class="lead fade-in">We are a dedicated team of high schoolers from the Bay Area, Maryland, and New Jersey. As beneficiaries of the privileges of having parents who work in high tech, it would mean a great deal for us as students to reach out to others who are less equipped to compete in the high-tech world.
+        </p>
+
     </div>
-    <div class="container mt-5 text-left">
-        <h1 class="fade-in">Our Mission</h1>
-        <p class="lead fade-in">This is some text that loads in with a fade-in animation.</p>
-    </div>
-    <div class="container mt-5 text-left">
-        <h1 class="fade-in">Partners and Sponsors</h1>
-        <p class="lead fade-in">This is some text that loads in with a fade-in animation.</p>
-    </div>
+
+    <div class="container mt-5">
+        <div class="row my-4">
+          <div class="col-sm">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
+                <img class="card-img-top" src="assets/team/sri.png">
+                <div class="card-body">
+                  <h5 class="card-title">Nhat Nguyen</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>PhD, Scientific Computing, Stanford University</li>
+                        <li>Artificial Intelligence, Machine Learning, Aerospace Engineering</li>
+                        <li>Technical Fellow, Advanced Technology Center, Lockheed Martin Space Systems Company</li>
+                    </ul>
+                  </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
+                <img class="card-img-top" src="assets/team/erictang1.png">
+                <div class="card-body">
+                  <h5 class="card-title">Desmond Tong</h5>
+                  <p class="card-text">Co-President and East Coast (Maryland) Branch Co-Director</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
+                <img class="card-img-top" src="assets/team/kadencrop2.png">
+                <div class="card-body">
+                  <h5 class="card-title">Rong Fang</h5>
+                  <p class="card-text">Former President</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
+                <img class="card-img-top" src="assets/team/briancrop.png">
+                <div class="card-body">
+                  <h5 class="card-title">Kyunghun Jung</h5>
+                  <p class="card-text">VP of Outreach</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-sm">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
+                <img class="card-img-top" src="assets/team/aryan3.png">
+                <div class="card-body">
+                  <h5 class="card-title">Meng C. Lin</h5>
+                  <p class="card-text">Newsletter Editor in Chief</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
+                <img class="card-img-top" src="assets/team/steven2.png">
+                <div class="card-body">
+                  <h5 class="card-title">Steve Chew</h5>
+                  <p class="card-text">Newsletter Editor in Chief</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
+                <img class="card-img-top" src="assets/team/boi3.png">
+                <div class="card-body">
+                  <h5 class="card-title">Gianna Evers</h5>
+                  <p class="card-text">Newsletter Editor</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
+                <img class="card-img-top" src="assets/team/dannycrop3.png">
+                <div class="card-body">
+                  <h5 class="card-title">Roark Marsh</h5>
+                  <p class="card-text">Outreach Officer</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-sm offset-sm-3">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
+                <img class="card-img-top" src="assets/team/bhavikcrop.png">
+                <div class="card-body">
+                  <h5 class="card-title">Ran Li</h5>
+                  <p class="card-text">Administrative Assistant</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
+                <img class="card-img-top" src="assets/team/nj1.png">
+                <div class="card-body">
+                  <h5 class="card-title">Nidhi Wadmark</h5>
+                  <p class="card-text">East Coast (New Jersey) Branch Member</p>
+                </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+
+    <footer>
+        <div class="container-fluid">
+            <footer class="bg-white text-black opacity-50 text-center p-3">
+              <p>&copy; Empower&Elevate</p>
+            </footer>
+          </div>
+    </footer>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
