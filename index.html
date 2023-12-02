@@ -24,6 +24,19 @@
           animation: fadeIn 1s ease-in-out;
         }
 
+        @keyframes fadeOut {
+            from {
+                opacity:1;
+            }
+            to {
+                opacity:0;
+            }
+        }
+
+        .fade-out {
+            animation: fadeOut 1s ease-in-out;
+        }
+
         .sponsorship {
             transition: transform 0.3s ease-in-out;
         }
@@ -102,12 +115,14 @@
     </nav>
 
     <div class="container my-5 px-5 mx-auto d-flex grad fade-in-stationary" style="width: 80%; height:30rem">
-        <div class="row">
-            <div class="col-sm-8 my-auto">
+        <div class="row mx-auto px-3 w-100 justify-content-center">
+            <div class="col-md-4 my-auto">
                 <h1 class="title fade-in">Empower&Elevate</h1>
             </div>
-            <div class="col-sm-1 my-auto">
-                <img src="assets/logo_new_white.png" class="logo" style="width:25rem;height:25rem">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4 my-auto">
+                <img src="assets/logo_new_white.png" class="logo img-fluid float-right" style="width:25rem;height:25rem">
             </div>
         </div>
     </div>
@@ -145,6 +160,7 @@
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="scripts/custom.js"></script>
 </body>
 
 </html>

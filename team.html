@@ -59,13 +59,15 @@
         }
 
         .tkl:hover {
-          animation: yipee 5s infinite;
           border-width: 10px;
           border-style:outset;
+          border-radius:0px;
         }
 
         .tkl {
-          transition: border-width 0.3s ease-in-out;
+          border-width: 0px;
+          transition: 0.3s ease-in-out;
+          animation: yipee 5s infinite;
         }
 
         .crop-center {
@@ -266,7 +268,7 @@
         </div> 
         <div class="row justify-content-center">
           <div class="col-sm-3">
-            <div class="card fade-in-stationary card-hover tkl" style="width: 18rem;">
+            <div class="card card-hover tkl" style="width: 18rem;">
                 <img class="card-img-top crop-center" src="assets/team/tkl.png">
                 <div class="card-body">
                   <h5 class="card-title">Thomas Li</h5>

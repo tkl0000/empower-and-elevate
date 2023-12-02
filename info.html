@@ -23,6 +23,53 @@
         .fade-in {
           animation: fadeIn 1s ease-in-out;
         }
+
+        .sponsorship {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .sponsorship:hover {
+            transform: translateY(-20px);
+        }
+
+        @keyframes logoFade {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            animation: logoFade 1s ease-in-out;
+        }
+
+        @keyframes fadeInStationary {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in-stationary {
+          animation: fadeInStationary 1s ease-in-out;
+        }
+
+        .grad {
+            border-radius: 50px;
+            background-image: linear-gradient(to bottom right, rgb(133, 133, 255), rgb(108, 194, 165));
+        }
+
+        .title {
+            font-size:80px;
+            color: white;
+        }
+
       </style>
 </head>
 <body>
@@ -53,17 +100,72 @@
             </div>
         </div>
     </nav>
+
+    <div class="container my-5 px-5 mx-auto d-flex grad fade-in-stationary" style="width: 80%; height:30rem">
+        <div class="row mx-auto px-3 w-100 justify-content-center">
+            <div class="col-md-4 my-auto">
+                <h1 class="title fade-in">More Info</h1>
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4 my-auto">
+                <img src="assets/info.png" class="logo img-fluid float-right" style="width:25rem;height:25rem">
+            </div>
+        </div>
+    </div>
+
     <div class="container mt-5 text-left">
-        <h1 class="fade-in">Who are We?</h1>
-        <p class="lead fade-in">This is some text that loads in with a fade-in animation.</p>
+        <h1 class="fade-in">Program Guidelines</h1>
+        <ul class="fade-in">
+            <li>
+                <p>Mentors and mentees will meet for 30 minutes in every month of the school year, with each date being scheduled in the previous meeting. We will continue adding mentors and mentees througout the school year.</p>
+            </li>
+            <li>
+                <p>If mentors or mentees need to reschedule the meeting, they must contact the other party at least 2 hours before the meeting.</p>
+            </li>
+            <li>
+                <p>All communication should be between the parent/guardian and mentor unless the parent/guardian gives consent for direct communication to the student.</p>
+            </li>
+            <li>
+                <p>Information about mentees will be kept confidential. Mentors should not share any personal information about their mentee</p>
+            </li>
+        </ul>
     </div>
     <div class="container mt-5 text-left">
-        <h1 class="fade-in">Our Mission</h1>
-        <p class="lead fade-in">This is some text that loads in with a fade-in animation.</p>
+        <h1 class="fade-in">Preferences</h1>
+        <ul class="fade-in">
+            <li>
+                <p>Mentors and mentees can choose whether they would prefer to meet in person or online, such as on zoom, by filling in their preferences on the form (or no preference).</p>
+            </li>
+            <li>
+                <p>Meetings in person will take place in locations where adults are present such as a public library.</p>
+            </li>
+        </ul>
     </div>
     <div class="container mt-5 text-left">
-        <h1 class="fade-in">Partners and Sponsors</h1>
-        <p class="lead fade-in">This is some text that loads in with a fade-in animation.</p>
+        <h1 class="fade-in">Mentor Responsibilities:</h1>
+        <ul class="fade-in">
+            <li>
+                <p>Send an email to the mentee prior to the meeting with a list of topics for discussion. More information about this can be found in the instructional video that we will send out.</p>
+            </li>
+            <li>
+                <p>If the meeting is online, find a quiet, appropriate place to minimize distractions and be able to concentrate on the discussion. Mentors must log into the zoom account we provide at least 5 minutes prior to the start of the meeting.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="container mt-5 text-left">
+        <h1 class="fade-in">Mentee Responsibilities</h1>
+        <ul class="fade-in">
+            <li>
+                <p>Students must behave like they are at school.</p>
+            </li>
+            <li>
+                <p>If the meeting is online, find a quiet, appropriate place to minimize distractions and be able to concentrate on the discussion. Parents or guardians should be accesible during online meetings.</p>
+            </li>
+            <li>
+                <p>A parent or guardian should be present for in-person meetings.</p>
+            </li>
+        </ul>
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
