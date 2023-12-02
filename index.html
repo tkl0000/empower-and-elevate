@@ -32,6 +32,44 @@
             transform: translateY(-20px);
         }
 
+        @keyframes logoFade {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            animation: logoFade 1s ease-in-out;
+        }
+
+        @keyframes fadeInStationary {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in-stationary {
+          animation: fadeInStationary 1s ease-in-out;
+        }
+
+        .grad {
+            border-radius: 50px;
+            background-image: linear-gradient(to bottom right, rgb(133, 133, 255), rgb(108, 194, 165));
+        }
+
+        .title {
+            font-size:80px;
+            color: white;
+        }
+
       </style>
 </head>
 <body>
@@ -62,6 +100,18 @@
             </div>
         </div>
     </nav>
+
+    <div class="container my-5 px-5 mx-auto d-flex grad fade-in-stationary" style="width: 80%; height:30rem">
+        <div class="row">
+            <div class="col-sm-8 my-auto">
+                <h1 class="title fade-in">Empower&Elevate</h1>
+            </div>
+            <div class="col-sm-1 my-auto">
+                <img src="assets/logo_new_white.png" class="logo" style="width:25rem;height:25rem">
+            </div>
+        </div>
+    </div>
+
     <div class="container mt-5 text-left">
         <h1 class="fade-in">Who are We?</h1>
         <p class="lead fade-in">Empower and Elevate is a 501(c)(3) non-profit organization. We are looking to offer mentorships and internships for high school students who are low-income or of underrepresented backgrounds. Our mentorship program connects students with experienced career professionals. We ask our mentors to connect students to internship opportunities at their workplace. Internships serve as a jumpstart to students' careers, providing students with experience and networks in the workplace. Mentors and mentees are paired based on career interests indicated on our sign-up forms which can be found below. Our mentorship program is free of charge for students.</p>
@@ -87,11 +137,11 @@
     </div>
 
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid fade-in-stationary">
             <footer class="bg-white text-black opacity-50 text-center p-3">
-              <p>&copy; Empower&Elevate</p>
+              <p>Empower and Elevate is a 501(c)(3) non-profit organization - (609) 608-5079 - contact@empowerandelevate.org</p>
             </footer>
-          </div>
+        </div>
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
