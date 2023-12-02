@@ -46,6 +46,33 @@
           transition: box-shadow 0.3s ease-in-out;
         }
 
+        @keyframes yipee {
+          0%    { border-color: red;}
+          12.5% { border-color: #ff00a8;}
+          25%   { border-color: #c400ff;}
+          37.5% { border-color: #00d3ff;}
+          50%   { border-color: #00ffaf;}
+          62.5% { border-color: #1aff00;}
+          75%   { border-color: #dbff00;}
+          87.5% { border-color: #ffc000;}
+          100%  { border-color: red;}
+        }
+
+        .tkl:hover {
+          animation: yipee 5s infinite;
+          border-width: 10px;
+          border-style:outset;
+        }
+
+        .tkl {
+          transition: border-width 0.3s ease-in-out;
+        }
+
+        .crop-center {
+          height: 18rem;
+          object-fit: cover;
+        }
+
       </style>
 </head>
 <body>
@@ -88,7 +115,7 @@
         <div class="row my-4">
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/sri.png">
+                <img class="card-img-top crop-center" src="assets/team/sri.png">
                 <div class="card-body">
                   <h5 class="card-title">Sri India</h5>
                   <p class="card-text">Co-President and East Coast (New Jersey) Branch Co-Director</p>
@@ -97,7 +124,7 @@
           </div>
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/erictang1.png">
+                <img class="card-img-top crop-center" src="assets/team/erictang1.png">
                 <div class="card-body">
                   <h5 class="card-title">Eric Tang</h5>
                   <p class="card-text">Co-President and East Coast (Maryland) Branch Co-Director</p>
@@ -106,7 +133,7 @@
           </div>
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/kadencrop2.png">
+                <img class="card-img-top crop-center" src="assets/team/kadencrop2.png">
                 <div class="card-body">
                   <h5 class="card-title">Kaden Nguyen</h5>
                   <p class="card-text">Former President</p>
@@ -115,7 +142,7 @@
           </div>
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/briancrop.png">
+                <img class="card-img-top crop-center" src="assets/team/briancrop.png">
                 <div class="card-body">
                   <h5 class="card-title">Brian Jeon</h5>
                   <p class="card-text">VP of Outreach</p>
@@ -126,7 +153,16 @@
         <div class="row my-4">
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/aryan3.png">
+                <img class="card-img-top crop-center" src="assets/team/timgcrop2.png">
+                <div class="card-body">
+                  <h5 class="card-title">Timothy Gao</h5>
+                  <p class="card-text">CFO, Technical Lead</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
+                <img class="card-img-top crop-center" src="assets/team/aryan3.png">
                 <div class="card-body">
                   <h5 class="card-title">Aryan Raikar</h5>
                   <p class="card-text">Newsletter Editor in Chief</p>
@@ -135,7 +171,7 @@
           </div>
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/steven2.png">
+                <img class="card-img-top crop-center" src="assets/team/steven2.png">
                 <div class="card-body">
                   <h5 class="card-title">Steven Yang</h5>
                   <p class="card-text">Newsletter Editor in Chief</p>
@@ -144,16 +180,7 @@
           </div>
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/boi3.png">
-                <div class="card-body">
-                  <h5 class="card-title">Andrew Xiao</h5>
-                  <p class="card-text">Newsletter Editor</p>
-                </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/dannycrop3.png">
+                <img class="card-img-top crop-center" src="assets/team/dannycrop3.png">
                 <div class="card-body">
                   <h5 class="card-title">Danny Huang</h5>
                   <p class="card-text">Outreach Officer</p>
@@ -164,7 +191,7 @@
         <div class="row my-4">
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/bhavikcrop.png">
+                <img class="card-img-top crop-center" src="assets/team/bhavikcrop.png">
                 <div class="card-body">
                   <h5 class="card-title">Bhavik Singhal</h5>
                   <p class="card-text">Administrative Assistant</p>
@@ -173,7 +200,7 @@
           </div>
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/nj1.png">
+                <img class="card-img-top crop-center" src="assets/team/nj1.png">
                 <div class="card-body">
                   <h5 class="card-title">Jayden Shah</h5>
                   <p class="card-text">East Coast (New Jersey) Branch Member</p>
@@ -182,7 +209,7 @@
           </div>
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/nj2.png">
+                <img class="card-img-top crop-center" src="assets/team/nj2.png">
                 <div class="card-body">
                   <h5 class="card-title">Shuban Iyer</h5>
                   <p class="card-text">East Coast (New Jersey) Branch Member</p>
@@ -191,7 +218,7 @@
           </div>
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/nj3.png">
+                <img class="card-img-top crop-center" src="assets/team/nj3.png">
                 <div class="card-body">
                   <h5 class="card-title">Ishaan Sharma</h5>
                   <p class="card-text">East Coast (New Jersey) Branch Member</p>
@@ -202,7 +229,16 @@
         <div class="row my-4">
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/md2.png">
+                <img class="card-img-top crop-center" src="assets/team/boi3.png">
+                <div class="card-body">
+                  <h5 class="card-title">Andrew Xiao</h5>
+                  <p class="card-text">Newsletter Editor</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
+                <img class="card-img-top crop-center" src="assets/team/md2.png">
                 <div class="card-body">
                   <h5 class="card-title">Andy Xiong</h5>
                   <p class="card-text">East Coast (Maryland) Branch Member</p>
@@ -211,7 +247,7 @@
           </div>
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/md3.png">
+                <img class="card-img-top crop-center" src="assets/team/md3.png">
                 <div class="card-body">
                   <h5 class="card-title">Ben Li</h5>
                   <p class="card-text">East Coast (Maryland) Branch Member</p>
@@ -220,19 +256,21 @@
           </div>
           <div class="col-sm">
             <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/md5.jpeg">
+                <img class="card-img-top crop-center" src="assets/team/md5.jpeg">
                 <div class="card-body">
                   <h5 class="card-title">Dora Zhou</h5>
                   <p class="card-text">East Coast (Maryland) Branch Member</p>
                 </div>
             </div>
           </div>
-          <div class="col-sm">
-            <div class="card fade-in-stationary card-hover" style="width: 18rem;">
-                <img class="card-img-top" src="assets/team/tkl.png">
+        </div> 
+        <div class="row justify-content-center">
+          <div class="col-sm-3">
+            <div class="card fade-in-stationary card-hover tkl" style="width: 18rem;">
+                <img class="card-img-top crop-center" src="assets/team/tkl.png">
                 <div class="card-body">
                   <h5 class="card-title">Thomas Li</h5>
-                  <p class="card-text">East Coast (Maryland) Branch Member</p>
+                  <p class="card-text">East Coast (Maryland) Branch Member, Website Development</p>
                 </div>
             </div>
           </div>
