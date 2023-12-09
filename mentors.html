@@ -51,6 +51,31 @@
             justify-content: center;
         }
 
+        @keyframes logoFade {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            animation: logoFade 1s ease-in-out;
+        }
+
+        .grad {
+            border-radius: 50px;
+            background-image: linear-gradient(to bottom right, rgb(133, 133, 255), rgb(108, 194, 165));
+        }
+
+        .title {
+            font-size:5vw;
+            color: white;
+        }
+
       </style>
 </head>
 <body>
@@ -84,6 +109,20 @@
             </div>
         </div>
     </nav>
+
+    <div class="container my-5 px-3 px-sm-0 mx-auto d-flex grad fade-in-stationary" style="max-width: 80%; height:auto;">
+      <div class="row px-3 px-md-5 mx-auto w-100 justify-content-center">
+          <div class="d-none d-md-block col-md-5 my-3 my-md-auto text-left">
+              <h1 class="title fade-in">Mentors</h1>
+          </div>
+          <div class="d-none d-md-block col-md-3 my-3 my-md-auto text-center">
+              <!-- Add content for the second column -->
+          </div>
+          <div class="col-md-4 my-3 my-md-auto text-center">
+              <img src="assets/mentor.png" class="logo img-fluid p-4" style="max-width:100%; height:auto;">
+          </div>
+      </div>
+    </div>
     
     <div class="container mt-5 text-left">
         <h1 class="fade-in">Meet our Mentors</h1>
