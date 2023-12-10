@@ -1,0 +1,283 @@
+<!-- https://www.empowerandelevate.org/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        /* Custom CSS for animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInStationary {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+        .fade-in {
+          animation: fadeIn 1s ease-in-out;
+        }
+
+
+        .fade-in-stationary {
+          animation: fadeInStationary 1s ease-in-out;
+        }
+
+        .card-hover:hover {
+          box-shadow: 0 16px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-hover {
+          transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .centered-columns {
+            display: flex;
+            justify-content: center;
+        }
+
+        .sponsorship {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .sponsorship:hover {
+            transform: translateY(-20px);
+        }
+
+        @keyframes logoFade {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            animation: logoFade 1s ease-in-out;
+        }
+
+        .grad {
+            border-radius: 50px;
+            background-image: linear-gradient(to bottom right, rgb(133, 133, 255), rgb(108, 194, 165));
+        }
+
+        .title {
+            font-size:5vw;
+            color: white;
+        }
+
+        .subtitle {
+            color: white;
+        }
+  
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="assets/logo_new_black.png" width="100rem"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-lg-start">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">More Info</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="careernight.html">Career Night</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="mentors.html">Mentors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Our Team</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 px-3 px-sm-0 mx-auto d-flex grad fade-in-stationary" style="max-width: 80%; height:auto;">
+      <div class="row px-3 px-md-5 mx-auto w-100 justify-content-center">
+          <div class="d-none d-md-block col-md-5 my-3 my-md-auto text-left">
+              <h1 class="title fade-in">Career Night</h1>
+              <h5 class="subtitle fade-in">July 27th, 2022</h1>
+              <h5 class="subtitle fade-in">7:00-8:15 P.M. (PST)</h2>
+          </div>
+          <div class="d-none d-md-block col-md-3 my-3 my-md-auto text-center">
+              <!-- Add content for the second column -->
+          </div>
+          <div class="col-md-4 my-3 my-md-auto text-center">
+              <img src="assets/careernight.png" class="logo img-fluid p-5" style="max-width:100%; height:auto;">
+          </div>
+      </div>
+    </div>
+    
+    <div class="container mt-5 text-left">
+        <h1 class="fade-in">Event Information</h1>
+        <p class="lead fade-in">Through a virtual meeting, accomplished career professionals will share their experiences with middle and high school students. We will have breakout rooms for each speaker, and students will be able to choose which room they want to go into. Career Night will provide a wonderful opportunity for students to get advice and learn from professionals in a variety of career fields. Personal interactions with these professionals will help students on their path to identify and pursue their career passions.</p>
+        <p class="lead fade-in">The Zoom link will be provided to students and parents after registration.</p>
+        <p class="font-weight-bold lead fade-in">All students in middle or high school are welcome to join.</p>
+        <p class="font-weight-bold lead fade-in">The planned schedule for the event is on <a href="https://docs.google.com/document/d/1anRKqi5ag1VsAu6CeFkJnnR5mzKXyOF-uvySbTmMBNA/edit">this</a> document.</p>
+        <p class="font-weight-bold lead fade-in">The short (5-10 minute) registration form for the event can be found <a href="https://forms.gle/UqsEpMXXqnn5ZkuQA">here</a>.</p>
+        <p class="font-weight-bold lead fade-in">If you have any other questions about the event, please feel free to reach out to us.</p>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="fade-in">Meet our Speakers</h2>
+      <p class="lead fade-in">Our speakers are experienced career professionals with advanced degrees in a variety of disciplines including Software/Electrical/Mechanical Engineering, Artificial/Machine Learning, Nursing, Business, Marketing, Education, Medicine, Biotechnology, and Physics.</p>
+        <div class="row my-4">
+          <div class="col-sm mb-4">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem; height: 20rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Nhat Nguyen</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>PhD, Scientific Computing, Stanford University</li>
+                        <li>Artificial Intelligence, Machine Learning, Aerospace Engineering</li>
+                        <li>Technical Fellow, Advanced Technology Center, Lockheed Martin Space Systems Company</li>
+                    </ul>
+                  </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm mb-4">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem; height: 20rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Rong Fang</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>MS, Electrical Engineering</li>
+                        <li>Software and Electrical Engineering</li>
+                        <li>Microsoft Cloud Solution Architect</li>
+                    </ul>
+                  </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm mb-4">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem; height: 20rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Katie Moe</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>Real Estate, Marketing, Investing, Entrepeneurship</li>
+                        <li>Founding Partner, Arrive Real Estate Group</li>
+                    </ul>
+                  </p>                  
+                </div>
+            </div>
+          </div>
+          <div class="col-sm mb-4">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem; height: 20rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Steve Chew</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>DDS, University of California, San Francisco School of Dentistry</li>
+                        <li>Owner, Chew Family Dentistry</li>
+                    </ul>
+                  </p>                
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-sm-3 mb-4 offset-sm-3">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem; height: 20rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Roark Marsh</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>PhD, Physics, Massachusetts Institute of Technology</li>
+                        <li>Experimental Physics, Mathematics, Scientific Research</li>
+                        <li>Scientist, Lawrence Livermore National Laboratory</li>
+                    </ul>
+                  </p>            
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-4">
+            <div class="card fade-in-stationary card-hover" style="width: 18rem; height: 20rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Ran Li</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>MSN, Nursing</li>
+                        <li>Nursing, Home Health, Pediatrics</li>
+                        <li>School Nurse, Fremont Unified School District</li>
+                    </ul>
+                  </p>                  
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 text-left">
+      <h2 class="fade-in">Event Prize Raffle</h1>
+      <p class="lead fade-in">All registered participants in the meeting will be entered into our free raffle drawing. At the end of the event, we will be giving out multiple prizes, courtesy of our sponsors.</p>
+    </div>
+
+    <div class="container mt-5 text-left">
+      <h2 class="fade-in">Event Partners and Sponsors</h1>
+      <p class="lead fade-in">If you are interested in sponsoring our program, check out our <a href="assets/prospectus.png">sponsorship prospectus!</a></p>
+    </div>
+
+    <div class="container mt-5 text-center fade-in">
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="fade-in">Sponsors</h1>
+          <a href="https://www.thebeautyofmath.net/">
+              <img src="assets/thebeautyofmathlogo.jpg" class="img-fluid shadow p-3 m-3 sponsorship" style="height:150px">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <h4 class="fade-in">Supporters</h1>
+          <a href="https://www.husd.us/">
+            <img src="assets/logo_HUSD.png" class="img-fluid shadow p-3 m-3 sponsorship" style="height:150px">
+          </a>
+          <a href="https://www.lockheedmartin.com/en-us/index.html">
+              <img src="assets/logo_lockmark.png" class="img-fluid shadow p-3 m-3 sponsorship" style="height:150px">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid fade-in-stationary">
+          <footer class="bg-white text-black opacity-50 text-center p-3">
+            <p>Empower and Elevate is a 501(c)(3) non-profit organization - (609) 608-5079 - contact@empowerandelevate.org</p>
+          </footer>
+      </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
